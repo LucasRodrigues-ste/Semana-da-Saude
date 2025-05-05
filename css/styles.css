@@ -1,0 +1,285 @@
+body {
+
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+    background-image: url('https://img.freepik.com/vetores-gratis/ilustracao-de-textura-de-madeira-de-design-plano_23-2149273580.jpg?t=st=1746024817~exp=1746028417~hmac=80d4b46aee0fe4affdd2dbc5f0b4c712684df323c23d031231c2d496b7035eb8&w=996');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh;
+
+}
+
+
+
+h1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #2821a0;
+    margin-bottom: 30px;
+    font-size: 300%;
+}
+
+
+
+.menu {
+
+    display: flex;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+
+
+.game-btn {
+
+    padding: 20px 35px;
+    background-color: #1e2fb1;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: transform 0.2s, background-color 0.2s;
+
+}
+
+#quizBtn {
+
+
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    width: 40%;
+    height: 50%;
+    padding: 20px 35px;
+    background-color: #1e2fb1;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 200%;
+    transition: transform 0.2s, background-color 0.2s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+#memoryBtn {
+
+
+    position: absolute;
+    top: 50%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+    width: 40%;
+    height: 50%;
+    padding: 20px 35px;
+    background-color: #1e2fb1;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 200%;
+    transition: transform 0.2s, background-color 0.2s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.game-btn:hover {
+
+    background-color: #1b7520;
+    transform: scale(1.05);
+}
+
+
+
+.game-container {
+
+    display: none;
+    width: 100%;
+    max-width: 800px;
+}
+
+
+
+.back-btn {
+
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+
+}
+
+
+.back-btn:hover {
+
+    background-color: #d32f2f;
+
+}
+
+
+/* Estilos específicos do Quiz */
+
+
+.quiz-options {
+
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin: 20px 0;
+
+
+
+}
+
+
+
+.quiz-option {
+
+    cursor: pointer;
+    border: 3px solid #ec7607dc;
+    border-radius: 8px;
+    transition: transform 0.2s, border-color 0.2s;
+
+
+
+}
+
+
+
+.quiz-option:hover {
+
+    transform: scale(1.05);
+
+}
+
+
+
+.quiz-option img {
+
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 5px;
+
+}
+
+
+
+.quiz-feedback {
+
+    margin: 20px 0;
+    font-weight: bold;
+    font-size: 20px;
+    min-height: 30px;
+
+}
+
+
+
+.correct {
+
+    border-color: #4CAF50 !important;
+
+}
+
+
+
+.incorrect {
+
+    border-color: #ff1100 !important;
+
+}
+
+
+
+/* Estilos específicos do Jogo da Memória */
+
+.memory-board {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* 4 colunas fixas */
+    gap: 20px;
+    margin: 20px auto;
+    padding: 10px;
+    max-width: 800px;
+    /* Ajuste conforme necessário */
+    box-sizing: border-box;
+}
+
+.memory-card {
+    width: 100%;
+    /* 100% do grid cell */
+    aspect-ratio: 4 / 4;
+    /* Mantém proporção */
+    background-color: #185a86;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s, background-color 0.3s;
+    transform-style: preserve-3d;
+
+}
+
+
+.memory-card.flipped {
+
+    background-color: rgb(255, 255, 255);
+    transform: rotateY(180deg);
+
+}
+
+
+.memory-card img {
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Mantém proporção e preenche */
+    border-radius: 10px;
+    /* Igual ao card */
+    backface-visibility: visible;
+    display: block;
+    /* Ou use lógica JS para exibir/ocultar */
+}
+
+.memory-card.flipped img {
+
+    display: block;
+
+}
+
+
+
+.memory-card.matched {
+
+    cursor: default;
+    opacity: 0.8;
+
+}
+
+
+
+.stats {
+
+    margin-top: 20px;
+    font-size: 18px;
+
+}

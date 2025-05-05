@@ -1,0 +1,73 @@
+<!DOCTYPE htm5>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Semana Da Alimentação Saudável</title>
+    <link rel="stylesheet" href="/css/styles.css" />
+    
+    </head>
+
+    <body>
+         
+        <div id="menuScreen">
+
+            <h1>Jogos dos Alimentos Saudáveis</h1>
+
+            <div class="menu">
+
+                <button class="game-btn" id="quizBtn">Quiz de Alimentos</button>
+
+                <button class="game-btn" id="memoryBtn">Jogo da Memória</button>
+
+            </div>
+
+        </div>
+
+
+        <!-- Quiz Game -->
+
+        <div id="quizGame" class="game-container">
+
+            <h2>Quiz de Alimentos</h2>
+
+            <div class="description" id="description">Carregando...</div>
+
+            <div class="quiz-options" id="options"></div>
+
+            <div class="quiz-feedback" id="feedback"></div>
+
+            <button class="game-btn" id="nextBtn" style="display: none;">Próximo Alimento</button>
+
+            <button class="back-btn" id="backQuizBtn">Voltar ao Menu</button>
+
+        </div>
+
+
+        <!-- Memory Game -->
+
+
+        <div id="memoryGame" class="game-container">
+
+            <h2>Jogo da Memória</h2>
+
+            <div class="stats">
+
+                <span id="moves">0</span> jogadas |
+
+                <span id="pairs">0</span>/6 pares
+
+            </div>
+
+            <div class="memory-board" id="gameBoard"></div>
+
+            <button class="back-btn" id="backMemoryBtn">Voltar ao Menu</button>
+
+        </div>
+
+        <script type="module" src="main.js"></script>
+
+    </body>
+
+</html>
