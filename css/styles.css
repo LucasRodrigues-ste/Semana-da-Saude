@@ -51,59 +51,78 @@ h1 {
 
 #quizBtn {
 
-
     position: absolute;
-    top: 50%;
-    left: 25%;
-    transform: translate(-50%, -50%);
-    width: 40%;
-    height: 50%;
+    bottom: 45%;
+    left: calc(50% - 17.5%); /* Centraliza sem usar translate */
+    width: 35%;
+    height: 30%;
     padding: 20px 35px;
     background-color: #1e2fb1;
     color: white;
     border: none;
     border-radius: 25px;
     cursor: pointer;
-    font-size: 200%;
+    font-size: 150%;
     transition: transform 0.2s, background-color 0.2s;
     display: flex;
     justify-content: center;
     align-items: center;
-
 
 }
 
 #memoryBtn {
 
-
     position: absolute;
-    top: 50%;
-    left: 75%;
-    transform: translate(-50%, -50%);
-    width: 40%;
-    height: 50%;
+    bottom: 10%;
+    left: calc(30% - 17.5%); /* Ajusta a posição sem translate */
+    width: 35%;
+    height: 30%;
     padding: 20px 35px;
     background-color: #1e2fb1;
     color: white;
     border: none;
     border-radius: 25px;
     cursor: pointer;
-    font-size: 200%;
+    font-size: 150%;
     transition: transform 0.2s, background-color 0.2s;
     display: flex;
     justify-content: center;
     align-items: center;
 
+}
+
+#choiceBtn {
+
+    position: absolute;
+    bottom: 10%;
+    left: calc(70% - 17.5%); /* Ajusta a posição sem translate */
+    width: 35%;
+    height: 30%;
+    padding: 20px 35px;
+    background-color: #1e2fb1;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 150%;
+    transition: transform 0.2s, background-color 0.2s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
 }
 
-.game-btn:hover {
-
-    background-color: #1b7520;
-    transform: scale(1.05);
+#quizBtn:hover, #memoryBtn:hover, #choiceBtn:hover {
+    background-color: #162a8a; /* Cor de fundo mais escura */
+    transform: scale(1.05); /* Aumenta o tamanho em 5% */
+    transition: transform 0.2s, background-color 0.2s; /* Suaviza a transição */
 }
 
-
+.game-btn:hover{
+    background-color: #162a8a; /* Cor de fundo mais escura */
+    transform: scale(1.05); /* Aumenta o tamanho em 5% */
+    transition: transform 0.2s, background-color 0.2s; /* Suaviza a transição */
+}
 
 .game-container {
 
@@ -131,7 +150,8 @@ h1 {
 .back-btn:hover {
 
     background-color: #d32f2f;
-
+     transform: scale(1.05); /* Aumenta o tamanho em 5% */
+    transition: transform 0.2s, background-color 0.2s; /* Suaviza a transição */
 }
 
 
@@ -247,23 +267,17 @@ h1 {
 }
 
 
+/* Ajuste para esconder as imagens corretamente */
 .memory-card img {
-
     width: 100%;
     height: 100%;
     object-fit: cover;
-    /* Mantém proporção e preenche */
-    border-radius: 10px;
-    /* Igual ao card */
-    backface-visibility: visible;
-    display: block;
-    /* Ou use lógica JS para exibir/ocultar */
+    opacity: 0;
+    transition: opacity 0.1s;
 }
 
 .memory-card.flipped img {
-
-    display: block;
-
+    opacity: 1;
 }
 
 
