@@ -49,6 +49,22 @@ export const quizFoods = [
 
         ]
 
+    },
+
+    {
+
+        description: "Teste.",
+
+        correctImage: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBcZCkkiIvoDoTJh7pMENItXDRNCkUN55MXvyq7ugwFd2GBbRjTL4ZET525w&s",
+
+        wrongImages: [
+
+            "https://img.freepik.com/vetores-gratis/utilizador-de-negocios-com-lupa_78370-7020.jpg?t=st=1746717504~exp=1746721104~hmac=198927ecc28be18d3c4f753e6c3dcd5e266570aabcd075989f28732660b35f27&w=900",
+
+            "https://img.freepik.com/vetores-gratis/utilizador-de-negocios-com-lupa_78370-7020.jpg?t=st=1746717504~exp=1746721104~hmac=198927ecc28be18d3c4f753e6c3dcd5e266570aabcd075989f28732660b35f27&w=900"
+
+        ]
+
     }
 
 ];

@@ -8,7 +8,7 @@ function initQuizGame() {
     const nextBtn = document.getElementById("nextBtn");
 
     function loadFood(index) {
-        const food = quizFoods[index]; // corrigido aqui
+        const food = quizFoods[index]; 
         descriptionEl.textContent = food.description;
         const allImages = [food.correctImage, ...food.wrongImages].sort(() => Math.random() - 0.5);
         optionsEl.innerHTML = "";
@@ -42,8 +42,13 @@ function initQuizGame() {
     }
 
     nextBtn.addEventListener("click", () => {
-        currentFoodIndex = (currentFoodIndex + 1) % quizFoods.length;
-        loadFood(currentFoodIndex);
+        if (currentFoodIndex < quizFoods.length - 1) {
+            currentFoodIndex++;
+            loadFood(currentFoodIndex);
+        } else {
+            feedbackEl.textContent = "🎉 Parabéns! Você completou o quiz!";
+            nextBtn.style.display = "none"; // Oculta o botão "Próximo" ao final
+        }
     });
 
     loadFood(0);
