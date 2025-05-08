@@ -6,68 +6,84 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Semana Da Alimentação Saudável</title>
     <link rel="stylesheet" href="/css/styles.css" />
-    
-    </head>
 
-    <body>
-         
-        <div id="menuScreen">
+</head>
 
-            <h1>Jogos dos Alimentos Saudáveis</h1>
+<body>
 
-            <div class="menu">
+    <div id="menuScreen">
 
-                <button class="game-btn" id="quizBtn">Quiz de Alimentos</button>
+        <h1>Jogos dos Alimentos Saudáveis</h1>
 
-                <button class="game-btn" id="memoryBtn">Jogo da Memória</button>
+        <div class="menu">
 
-            </div>
+            <button id="quizBtn" class="game-btn">Quiz de Alimentos</button>
 
-        </div>
+            <button id="memoryBtn" class="game-btn">Jogo da Memória</button>
 
-
-        <!-- Quiz Game -->
-
-        <div id="quizGame" class="game-container">
-
-            <h2>Quiz de Alimentos</h2>
-
-            <div class="description" id="description">Carregando...</div>
-
-            <div class="quiz-options" id="options"></div>
-
-            <div class="quiz-feedback" id="feedback"></div>
-
-            <button class="game-btn" id="nextBtn" style="display: none;">Próximo Alimento</button>
-
-            <button class="back-btn" id="backQuizBtn">Voltar ao Menu</button>
+            <button id="choiceBtn" class="game-btn">Monte seu Prato</button>
 
         </div>
 
+    </div>
 
-        <!-- Memory Game -->
+
+    <!-- Quiz Game -->
+
+    <div id="quizGame" class="game-container">
+
+        <h2>Quiz de Alimentos</h2>
+
+        <div class="description" id="description">Carregando...</div>
+
+        <div class="quiz-options" id="options"></div>
+
+        <div class="quiz-feedback" id="feedback"></div>
+
+        <button class="game-btn" id="nextBtn" style="display: none;">Próximo Alimento</button>
+
+        <button class="back-btn" id="backQuizBtn">Voltar ao Menu</button>
+
+    </div>
 
 
-        <div id="memoryGame" class="game-container">
+    <!-- Memory Game -->
 
-            <h2>Jogo da Memória</h2>
+    <div id="memoryGame" class="game-container">
 
-            <div class="stats">
+        <h2>Jogo da Memória</h2>
 
-                <span id="moves">0</span> jogadas |
+        <div class="stats">
 
-                <span id="pairs">0</span>/6 pares
+            <span id="moves">0</span> jogadas |
 
-            </div>
-
-            <div class="memory-board" id="gameBoard"></div>
-
-            <button class="back-btn" id="backMemoryBtn">Voltar ao Menu</button>
+            <span id="pairs">0</span>/6 pares
 
         </div>
 
-        <script type="module" src="main.js"></script>
+        <div class="memory-board" id="gameBoard"></div>
 
-    </body>
+        <button class="back-btn" id="backMemoryBtn">Voltar ao Menu</button>
+
+    </div>
+
+
+    <!--Monte seu Prato-->
+
+    <div id="choiceGame" class="game-container">
+
+        <h2>Monte seu Prato</h2>
+
+
+
+
+        <button class="back-btn" id="backChoiceBtn">Voltar ao Menu</button>
+
+    </div>
+
+
+    <script type="module" src="main.js"></script>
+
+</body>
 
 </html>
