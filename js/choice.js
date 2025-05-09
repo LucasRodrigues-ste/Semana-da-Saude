@@ -1,19 +1,9 @@
 import { foodChoices } from '../data/foods.js';
 
 function initChoiceGame() {
-    const choiceContainer = document.getElementById("choiceGame");
-    const feedbackEl = document.createElement("div");
-    feedbackEl.id = "choiceFeedback";
-    choiceContainer.appendChild(feedbackEl);
-
-    const foodListEl = document.createElement("div");
-    foodListEl.id = "foodList";
-    choiceContainer.appendChild(foodListEl);
-
-    const evaluateBtn = document.createElement("button");
-    evaluateBtn.textContent = "Avaliar Alimentação";
-    evaluateBtn.className = "game-btn";
-    choiceContainer.appendChild(evaluateBtn);
+    const feedbackEl = document.getElementById("choiceFeedback");
+    const foodListEl = document.getElementById("foodList");
+    const evaluateBtn = document.getElementById("evaluateBtn");
 
     let selectedFoods = [];
 
@@ -49,6 +39,8 @@ function initChoiceGame() {
         } else {
             feedbackEl.textContent = "Você fez escolhas equilibradas. 👍";
         }
+
+        evaluateBtn.style.display = "none";
     }
 
     evaluateBtn.addEventListener("click", evaluateChoices);

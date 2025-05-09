@@ -1,3 +1,4 @@
+//#region Quiz
 export const quizFoods = [
 
     {
@@ -69,8 +70,9 @@ export const quizFoods = [
 
 ];
 
+//#endregion
 
-
+//#region Memoria
 export const foodPairs = [
 
 
@@ -88,10 +90,22 @@ export const foodPairs = [
 
 ];
 
+//#endregion
+
+//#region Monte seu Prato
 export const foodChoices = [
     { name: "Maçã", image: "/images/maca.png", isHealthy: true },
-    { name: "Pizza", image: "/images/pizza.png", isHealthy: false },
+    { name: "Chocolate", image: "https://media.istockphoto.com/id/121282958/pt/foto/chocolate.jpg?b=1&s=612x612&w=0&k=20&c=Ht92z17qNsK3fsXX8unUeAP6LRRyZqpnDShmA13kt_M=", isHealthy: false },
     { name: "Salada", image: "/images/salada.png", isHealthy: true },
     { name: "Refrigerante", image: "/images/refrigerante.png", isHealthy: false },
     { name: "Peixe", image: "/images/peixe.png", isHealthy: true },
+    { name: "Peixe", image: "/images/peixe.png", isHealthy: true },
+    { name: "Peixe", image: "/images/peixe.png", isHealthy: true },
+    { name: "Peixe", image: "/images/peixe.png", isHealthy: true },
+    { name: "Peixe", image: "/images/peixe.png", isHealthy: true },
+    { name: "Peixe", image: "/images/peixe.png", isHealthy: true },
+    { name: "Peixe", image: "/images/peixe.png", isHealthy: true },
+    { name: "Peixe", image: "/images/peixe.png", isHealthy: true },
 ];
+
+//#endregion
